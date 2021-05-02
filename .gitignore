@@ -1,0 +1,16 @@
+# ignore tensorboard logging files
+**/runs
+
+# ignore data files
+data/**
+!data/.gitkeep
+
+.idea
+**/.DS_Store 
+**/.ipynb_checkpoints
+**/__pycache__
+
+**/*.pth
+**/*.vocab
+**/*.model
+
