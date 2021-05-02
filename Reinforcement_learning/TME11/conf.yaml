@@ -1,0 +1,22 @@
+seed: 5
+env_name: simple_spread
+eps_std: 0.2  # works for all 3 envs
+lr_q: 0.01
+lr_mu: 0.001
+hidden_sizes_mu:
+  - 128
+  - 128
+hidden_sizes_q:
+  - 128
+  - 128
+gamma: 0.95
+batch_size: 128
+rho: 0.9
+
+buffer_min_len: 200
+buffer_limit: 1000
+max_episodes: 15000
+update_freq: 1  # number of episodes between each training epoch
+update_iter: 3  # number of training steps inside each epoch
+
+render: True

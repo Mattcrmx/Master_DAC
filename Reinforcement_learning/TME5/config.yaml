@@ -1,0 +1,20 @@
+seed: 4
+env: LunarLander-v2
+#env: CartPole-v1
+feat_extractor: 'nothing_to_do'
+#env: gridworld-v0
+#map: gridworldPlans/plan0.txt
+#rewards:
+#  '0': -0.001
+#  '3': 1
+#  '4': 1
+#  '5': -1
+#  '6': -1
+#feat_extractor: 'map_from_dump2'
+episode_count: 15000
+freq_optim: 1000  # in time steps (but wait for the episode to finish)
+gamma: 0.99
+hidden_sizes:
+  - 128
+  - 32
+lr: 0.02

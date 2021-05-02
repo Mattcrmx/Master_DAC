@@ -1,0 +1,15 @@
+batch_size: 64
+criterion: mse
+lr: 0.005
+latent_dim: 50
+encode: tan_h
+n_cities: 15
+seq_length: 72
+optimizer: adam
+predict_window: 10
+
+trainer:
+  max_epochs:  30
+
+log_freq_grad: 100
+log_freq_fig: 500

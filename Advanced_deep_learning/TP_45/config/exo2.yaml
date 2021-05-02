@@ -1,0 +1,14 @@
+batch_size: 64
+criterion: CE
+lr: 0.0005
+latent_dim: 50
+encode: tan_h
+decode: softmax
+n_cities: 10
+seq_length: 24
+optimizer: adam
+
+trainer:
+  max_epochs:  30
+
+log_freq_grad: 100

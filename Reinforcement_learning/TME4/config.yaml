@@ -1,0 +1,30 @@
+seed: 4
+#env: CartPole-v1
+#feat_extractor: 'nothing_to_do'
+env: LunarLander-v2
+feat_extractor: 'nothing_to_do'
+#env: gridworld-v0
+#map: gridworldPlans/plan0.txt
+#rewards:
+#  '0': -0.001
+#  '3': 1
+#  '4': 1
+#  '5': -1
+#  '6': -1
+#feat_extractor: 'map_from_dump2'
+#feat_extractor: 'dists_from_states'
+
+episode_count: 15000
+freq_test: 100
+
+gamma: 0.98
+mem_size: 10000
+prior: True
+hidden_sizes: # hidden layers for the Q network
+  - 128
+  - 32
+update_target: 40  # target network update weights frequency
+eps: 0.3  # epsilon greedy exploration
+eps_decay: 0.9999
+batch_size: 100
+lr: 0.001

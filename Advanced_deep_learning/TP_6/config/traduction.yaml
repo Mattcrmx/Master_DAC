@@ -1,0 +1,18 @@
+# model
+embedding_dim: 60
+nb_layers: 3
+hidden_dim: 50
+bidirectional: True
+
+# optimizer
+batch_size: 64
+lr: 0.001
+max_len: 100
+teacher_forcing_tau: 4
+use_segmentation: True
+
+trainer:
+  # args for PyTorch Lightning Trainer
+  max_epochs: 150
+  log_every_n_steps: 10
+log_freq_text: 50

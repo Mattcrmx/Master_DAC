@@ -1,0 +1,23 @@
+seed: 5
+env: gridworld-v0
+map: gridworldPlans&Goals/plan2Multi.txt
+rewards:
+  '0': -0.1
+  '2': 1
+feat_extractor: 'map_from_dump_4'
+
+episode_count: 15000
+freq_test: 100
+
+gamma: 0.99
+mem_size: 1000000
+prior: False
+hidden_sizes: # hidden layers for the Q network
+  - 200
+  - 200
+update_target: 1000  # target network update weights frequency
+eps: 0.2  # epsilon greedy exploration
+eps_decay: 1
+batch_size: 1000
+lr: 0.001
+max_ep_len: 100

@@ -1,0 +1,13 @@
+seed: 5
+lr: 0.0003
+batch_size: 64
+epochs: 50000
+log_every_n_steps: 20
+test_freq: 50
+test_episodes: 10
+algo: 'gail'  # 'bc' or 'gail'
+K: 5
+clip_eps: 0.2
+train_every_n_events: 1000
+train_iter: 10
+entropy_weight: 0.001

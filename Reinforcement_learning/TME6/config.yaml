@@ -1,0 +1,25 @@
+seed: 5
+#env: LunarLander-v2
+env: CartPole-v1
+feat_extractor: 'nothing_to_do'
+#env: gridworld-v0
+#map: gridworldPlans/plan0.txt
+#rewards:
+#  '0': -0.001
+#  '3': 1
+#  '4': 1
+#  '5': -1
+#  '6': -1
+#feat_extractor: 'map_from_dump2'
+
+K: 3
+# clipped PPO if >0, KL if <0
+#clip_eps: 0.1
+clip_eps: -1
+episode_count: 15000
+gamma: 0.99
+hidden_sizes:
+  - 128
+  - 32
+lr: 0.0005
+delta: .01

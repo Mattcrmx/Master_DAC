@@ -1,0 +1,16 @@
+# model architecture
+seq_length: 20
+latent_dim: 100  # dimension of the latent space in the RNN
+encode:  tan_h
+
+# optimisation parameters
+criterion:  CE
+# SGD with lr=0.001 kinda works too
+optimizer:  adam
+lr:  0.0001
+batch_size: 64
+trainer:
+  max_epochs:  30
+
+log_freq_grad: 100
+log_freq_text: 500

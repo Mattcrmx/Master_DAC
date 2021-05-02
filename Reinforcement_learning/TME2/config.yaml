@@ -1,0 +1,6 @@
+episode_count: 1000  # for test
+precision_v: 0.01
+discount: 0.99
+
+verbose: True  # print info and render environment
+FPS: 0.0001

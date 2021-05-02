@@ -1,0 +1,26 @@
+# -- model architecture
+max_len: 100
+start_len: 10
+beam_search_k: 5  # beam search algorithm will only be used if k > 1
+nucleus_sampling: True
+teacher_forcing_decay: 0.  # progressively decrease the use of teacher forcing during training
+latent_dim: 300  # dim_h
+model_type: gru # gru or lstm
+dim_embedding: 50
+#model_type: rnn
+#encode: tan_h
+
+# -- optimizer
+criterion: maskedCE
+optimizer: SGD # 'SGD' with lr=0.001 kinda works too for the RNN / adam with lr=0.005 otherwise
+lr: 0.001
+batch_size: 64
+
+trainer:
+  # args for PyTorch Lightning Trainer
+  max_epochs: 300
+  log_every_n_steps: 100
+  gradient_clip_val: 0.
+
+log_freq_grad: 3000
+log_freq_text: 1000

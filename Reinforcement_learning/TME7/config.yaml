@@ -1,0 +1,22 @@
+seed: 42
+env_name: Pendulum-v0
+#env_name: MountainCarContinuous-v0
+#env_name: LunarLanderContinuous-v2
+a_low: -10
+a_high: 10
+eps_std: 0.02  # works for all 3 envs
+lr_q: 0.001
+lr_mu: 0.0005
+hidden_sizes_mu:
+  - 128
+  - 64
+hidden_sizes_q:
+  - 128
+  - 32
+gamma: 0.99
+batch_size: 64
+rho: 0.995
+buffer_limit: 50000  # 50000 worked for Pendulum and MountainCar, 1000000 worked for LunarLander
+max_episodes: 15000
+update_freq: 1  # number of episodes between each training epoch
+update_iter: 10  # number of training steps inside each epoch
